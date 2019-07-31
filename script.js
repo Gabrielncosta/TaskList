@@ -1,15 +1,8 @@
-let val;
+// Define UI Vars
+const form = document.querySelector('#task-form');
+const taskList = document.querySelector('.collection');
+const clearBtn = document.querySelector('clear-tasks');
+const filter = document.querySelector('#filter');
+const taskInput = document.querySelector('#task');
 
-const list = document.querySelector('ul.collection');
-const listItem = document.querySelector('li.collection-item:first-child')
-
-val = listItem;
-
-/* val.style.background = "red";
- */
-val = list.children;
-
-val[1].textContent = 'hello';
-
-
-console.log(val);
+loadEventListeners();
